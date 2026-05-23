@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import WeatherInfo from './WeatherInfo';
-import WeatherForecast from './WeatherForecast';
 import axios from 'axios';
 import './Weather.css';
 
@@ -11,12 +10,10 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      coordinates: response.data.coordinates,
       temperature: response.data.temperature.current,
       humidity: response.data.temperature.humidity,
       date: new Date(response.data.time * 1000),
       description: response.data.condition.description,
-      icon: response.data.condition.icon,
       iconUrl: response.data.condition.icon_url,
       wind: response.data.wind.speed,
       city: response.data.city,
@@ -64,10 +61,9 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-        <WeatherForecast coordinates={weatherData.coordinates} city={weatherData.city} />
         <footer>
           This project was coded by{' '}
-          <a href='https://www.shecodes.io/' target='_blank' rel='noopener noreferrer'>
+          <a href='https://github.com/BoitumeloRak' target='_blank' rel='noopener noreferrer'>
             Boitumelo Rakgole
           </a>{' '}
           and is{' '}
