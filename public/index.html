@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Weather application">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>react-weather</title>
+    <script defer="defer" src="/src/js/main.js"></script>
+    <link rel="stylesheet" href="/src/css/main.css">
+  </head>
+  <body>
+    <noscript></noscript>
+    <div id="root">
+      <div class="App">
+        <div class="container">
+          <div class="Weather">
+            
+            <a href="https://www.shecodes.io" target="_blank" rel="noopener noreferrer">\
+              <img class="logo" alt="SheCodes Logo" src="/images/logo.png">
+            </a>
+            <form>
+              <div class="row">
+                <div class="col-9">
+                  <input placeholder="Enter a city..." class="form-control search-input" type="search">
+                </div>
+                <div class="col-3 p-0">
+                  <input class="btn btn-primary" w-100 type="submit" value="Search">
+                </div>
+              </div>
+            </form>
+            <div class="WeatherInfo">
+              <div class="row">
+                <div class="col-6">
+                  <h1>Johannesburg</h1>
+                  <ul>
+                    <li>
+                      <span>
+                        "Saturday"
+                        "19"
+                        ":"
+                        "57"
+                      </span>
+                      ", "
+                      "scattered clouds"
+                    </li>
+                    <li>
+                      "Humidity: "
+                      <strong>
+                        "65"
+                        "%"
+                      </strong>
+                      ", Wind:"
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-8">
+                  <div class="temperature-container d-flex justify-content-end">
+                    <canvas width="52" height="52">
+                    <div>
+                      <span class="temperature">17</span>
+                      <span class="unit">°C</span>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="WeatherForecast row">
+              <div class="col">
+                <div class="WeatherForecastPreview">
+                  <div class="forecast-time">Sat</div>
+                  <canvas width="38" height="38">
+                </div>
+              </div>
+              <div class="col">
+                <div class="WeatherForecastPreview">
+                  <div class="forecast-time">Sun</div>
+                  <canvas width="38" height="38">
+                  <div class="forecast-temperature">
+                    <span class="forecast-temperature-max">16°</span>
+                    <span class="forecast-temperature-min">12°</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="WeatherForecastPreview">
+                  <div class="forecast-time">Mon</div>
+                  <canvas width="38" height="38">
+                  <div class="forecast-temperature">
+                    <span class="forecast-temperature-max">15°</span>
+                    <span class="forecast-temperature-min">12°</span>
+                  </div> 
+                </div>
+              </div>
+              <div class="col">
+                <div class="WeatherForecastPreview">
+                  <div class="forecast-time">Tue</div>
+                  <canvas width="38" height="38">
+                  <div class="forecast-temperature">
+                    <span class="forecast-temperature-max">15°</span>
+                    <span class="forecast-temperature-min">11°</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="WeatherForecastPreview">
+                  <div class="forecast-time">Wed</div>
+                  <canvas width="38" height="38">
+                  <div class="forecast-temperature">
+                    <span class="forecast-temperature-max">17°</span>
+                    <span class="forecast-temperature-min">11°</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <footer class="WeatherForecast row">
+              This project was coded by 
+              <a href="https:www.shecodes.io" target="_blank" rel="noopener noreferrer">Boitumelo Rakgole</a>
+              and is
+              <a href="https://github.com/BoitumeloRak/react-weather" target="_blank" referrerpolicy="noopener noreferrer">open-sourced on GitHub</a>
+              and
+              <a href="https://rweatherr.netlify.app/">hosted on Netlify</a>
+
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
